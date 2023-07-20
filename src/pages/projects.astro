@@ -1,24 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title = "Blog" sideBarActiveItemID="Blog">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+    <div class="text-3xl w-full font-bold mb-5">Blog</div>
+    <img src="../../public/dev_adventure.png" alt="dev adventure">
   </div>
-
-  <HorizontalCard
-    title="Purrfect Paws Life"
-    img="/purrfect-paws-life.jpg"
-    desc="A Hasbro Game of Life clone with a cat theme; final project at Dev Academy"
-    url="/project1"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Escape From Boris"
-    img="/escape-from-boris.jpg"
-    desc="This project was a hangman-style game featuring a timer and a menacing cat named Boris, whose size would increase with each failed guess."
-    url="#"
-  />
+  During my time at Dev Academy, I had the exhilarating opportunity to build my very first website from scratch. 
+  Armed with newfound coding knowledge and inspiration, I delved into the world of web development with great enthusiasm. 
+  Guided by mentors and supported by my peers, I designed a simple yet visually appealing website with minimalistic CSS. 
+  Embracing the principles of responsive design, I ensured that the site seamlessly adapts to various devices, providing an 
+  optimal user experience across desktops, tablets, and mobiles. This hands-on experience in crafting a responsive website ignited my passion for web development and laid the foundation for my journey into the exciting world of coding.
+  <div class="social-icons px-4 pb-5 pt-1 flex self-center justify-center sticky bottom-0 bg-base-200">
+    <a
+        href="https://sarah-park83.github.io/index.html"
+        target="_blank"
+        class="mx-3"
+        aria-label="blog"
+        title="blog"
+    >
+      <img src="blog.png" alt="blog" width="50" height="50">
+    </a>
 </BaseLayout>
